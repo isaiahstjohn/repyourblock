@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+Icon attriputions:
+
+people-ico.png: people by b farias from the Noun Project
+fairness-ico.png: Law by Gregor Cresnar from the Noun Project
+collaboration-ico.png: collaboration by ProSymbols from the Noun Project
+participation-ico.png: Volunteer by Graphic Tigers from the Noun Project
+sustainability-ico.png: sustainable by Rogue One from the Noun Project
+democracy-ico.png: elections by Kiran from the Noun Project
+
+Image attributions:
+
+above-clouds: Photo by LSD for Society on Unsplash
+columbus-panorama: 	Columbus, Ohio. Photo shot by Derek Jensen (Tysto), 2006-01-23
+-->
+
+<head>
+    <title>
+        #RepYourBlock2020&mdash;A project of the Franklin County Grassroots Democrats
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="#RepYourBlock2020 is a project of the Franklin County Grassroots Democrats
+  to advocate for participatory democracy.">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700|Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../img/favicons/favicon.ico">
+    <link rel="icon" href="../img/favicons/favicon.png">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <script src="live.js"></script>
+    <style>
+        /* Colors:      */
+
+        html {
+            background-color: #000;
+        }
+
+        html,
+        a {
+            font-family: 'Oswald', sans-serif;
+            font-size: 24px;
+            color: #fff;
+            font-weight: 300;
+        }
+
+        a:hover {
+            color: #e9e9e9;
+            font-weight: 300;
+        }
+
+
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        button {
+            font-size: 1.2rem;
+            margin: .6rem;
+            padding: .6rem;
+            text-transform: uppercase;
+            background-color: #822e81;
+            cursor: pointer;
+            border: none;
+            color: #fff;
+            font-weight: 700;
+            border-radius: .2rem;
+        }
+
+        button:hover {
+            background-color: #d80;
+        }
+
+        strong {
+            font-weight: 700;
+        }
+
+        #navbar {
+            position: absolute;
+            width: 100%;
+            background-color: #aa6373;
+            opacity: .8;
+            display: flex;
+            justify-content: space-between;
+            padding: .7rem;
+            flex-wrap: wrap;
+        }
+
+        .navbar-brand {
+            font-family: 'Permanent Marker', sans-serif;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            transform: rotate(-1.5deg);
+            margin-right: 0.4rem;
+        }
+
+        #navbar-links a {
+            padding: 0 0 0 .2rem;
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        #navbar-links a:hover {
+            color: #e9e9e9;
+        }
+
+        #navbar a {
+            display: inline-block;
+        }
+
+        #top {
+            width: 100%;
+            background:
+                linear-gradient(rgba(0, 0, 0, 0),
+                    rgba(57, 32, 97, .4),
+                    rgba(57, 32, 97, .4),
+                    rgba(57, 32, 97, 0)),
+                url('donkey-cropped.jpg');
+            background-position: center;
+            padding-bottom: 2rem;
+        }
+
+        #tagline {
+            padding: 12rem 0 10rem 0;
+            margin: 0 1rem 2rem 0;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        .elevator-pitch {
+            font-size: 1.15rem;
+            font-weight: 400;
+        }
+
+        #call-to-action-top {
+            background-color: #001C51;
+            margin-top: 0px;
+            text-align: center;
+            padding-top: 1rem;
+            padding-bottom: 3rem;
+        }
+
+        #call-to-action-top div {
+            position: relative;
+            padding-top: 2rem;
+        }
+
+        #top-action {
+            padding-bottom: 10rem;
+        }
+
+        .longform {
+            background: #666;
+            padding: 1rem;
+        }
+
+        .cardbox {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            width: 10rem;
+            text-align: center;
+            margin: 0 1rem 3rem 1rem;
+            color: #fff;
+        }
+
+        section.vision {
+            background-image: url(above-clouds.jpg)
+        }
+
+        p,
+        ul {
+            width: 250px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            text-align: center;
+            margin-top: 0;
+            font-weight: 700;
+        }
+
+        h1,
+        h2 {
+            text-transform: uppercase;
+        }
+
+        .values {
+            background-color: #aa6367;
+            background:
+                linear-gradient(rgba(57, 32, 97, .9),
+                    rgba(57, 32, 97, .9)),
+                url('columbus-panorama.jpg');
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .value-icon {
+            height: 5rem;
+            margin-bottom: 1rem;
+        }
+
+
+        footer {
+            background-color: #001c51;
+            padding: 1rem 0rem;
+            text-align: center;
+            color: #999;
+            font-size: .7rem;
+        }
+
+        @media only screen and (min-width: 450px) {
+
+            p,
+            ul {
+                width: 350px;
+            }
+        }
+
+        @media only screen and (min-width: 700px) {
+            #tagline {
+                font-size: 2rem;
+            }
+
+            p,
+            ul {
+                width: 20rem;
+            }
+
+            #navbar-links a {
+                padding: 0 .28rem;
+            }
+
+            .navbar-brand {
+                font-size: 1.25rem;
+            }
+
+            .elevator-pitch,
+            #tagline {
+                width: 20rem;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        @media only screen and (min-width: 1000px) {
+
+            p,
+            ul {
+                width: 30rem;
+            }
+
+            #navbar-links a {
+                padding: 0 .75rem;
+            }
+
+            .navbar-brand {
+                font-size: 1.5rem;
+            }
+
+            .elevator-pitch,
+            #tagline {
+                width: 30rem;
+            }
+
+            .elevator-pitch {
+                font-size: 1.3rem;
+            }
+
+            #tagline {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media only screen and (min-width: 1200px) {
+            .elevator-pitch {
+                width: 30rem;
+            }
+
+            #tagline {
+                width: 50rem;
+                font-size: 2.5rem;
+            }
+
+        }
+
+        @media only screen and (min-width: 1500px) {
+            #tagline {
+                width: 60rem;
+                font-size: 3rem;
+            }
+
+            .elevator-pitch {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="top">
+        <section id="navbar" class="flex">
+            <div><a href="index.html" class="navbar-brand">#RepYourBlock2020</a></div>
+            <div id="navbar-links">
+                <a href="how-we-win.html">How we win</a>
+                <a href="volunteer.html">Volunteer</a>
+                <a href="donate.html">Donate</a>
+            </div>
+        </section>
+        <h1 id="tagline" class="center">We're taking back the Franklin County Democratic Party, one block at a time</h1>
+    </header>
+    <div id="body">
+        <section id="call-to-action-top">
+            <div class="elevator-pitch center">For too long, a wealthy and powerful few have made decisions for our
+                communities. We're electing scores of impassioned neighborhood ambassadors to the
+                Central Committee. Together, we can build a party that truly fights for dignity for
+                all residents in Franklin County.
+            </div>
+            <div class="elevator-pitch center">
+                Will you join us?
+            </div>
+            <div id="#top-action" class="center">
+                <button class="center">Yes, I'm in</button>
+                <br>
+                <a href="#" class="center">I'm not sure yet</a>
+            </div>
+        </section>
+        <section class="longform center values">
+            <h2>Our Values</h2>
+            <div>
+                <p class="center">
+                    We are committed to concretely improving the quality of life in our neighborhoods.
+                    We feel underrepresented and undervalued by the current political leadership in Franklin County,
+                    and we have the courage to think big and challenge the status quo. We share a belief in:
+                </p>
+                <div class="cardbox">
+                    <div class="card">
+                        <img src="people-icon.png" class="value-icon">
+                        <h3>People</h3> We trust in people and our capacity to make decisions for our
+                        communities.
+                    </div>
+                    <div class="card">
+                        <img src="fairness-icon.png" class="value-icon">
+                        <h3>Fairness</h3> We work toward a fairer and more equitable economy and society.
+                    </div>
+                    <div class="card">
+                        <img src="participation-icon.png" class="value-icon">
+                        <h3>Participation</h3> When democratic participation is small and people are divided,
+                        the
+                        wealthy
+                        and powerful win. When we all come together, we can transform our communities.
+                    </div>
+                    <div class="card">
+                        <img src="collaboration-icon.png" class="value-icon">
+                        <h3>Collaboration</h3> We aim to help build a society that embraces new tools and
+                        processes
+                        for sharing and cooperation.
+                    </div>
+                    <div class="card">
+                        <img src="sustainability-icon.png" class="value-icon">
+                        <h3>Sustainability</h3> We help create more sustainable, vibrant and resilient
+                        communities.
+                    </div>
+                    <div class="card">
+                        <img src="democracy-icon.png" class="value-icon">
+                        <h3>Democracy</h3> We believe decision-making should be open, transparent,
+                        collaborative
+                        and
+                        focused on those who will be most impacted. We aim to rebuild trust in our neighborhoods and
+                        provide people with meaningful opportunities to provide feedback and input.
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="longform center vision">
+            <h2>Our Vision</h2>
+            <p class="center">When we build a new majority within the Franklin County Democratic Party,
+                we will:
+            </p>
+            <ul class="center">
+                <li>democratize and re-energize the county party</li>
+                <li>cultivate leaders at <strong>all</strong> levels</li>
+                <li>redefine what it means to be a Central Committee member</li>
+            </ul>
+            <p class="center">Here's our vision for the future of the party:</p>
+            <p>Insert table here</p>
+            <p class="center">Here's our vision for the role of Central Committee members:</p>
+            <p>Insert table here</p>
+        </section>
+        <section class="center sign-up-form longform">
+            <h2>Get Updates on the Movement</h2>
+            <form>
+                Insert form here
+            </form>
+        </section>
+    </div> <!-- #body -->
+    <div id="nav-modal" hidden>
+        <header class="navbar">
+            <section>
+                <a href="#">X</a>
+            </section>
+            <section>
+                <a href="index.html" class="navbar-brand">#RepYourBlock2020</a>
+            </section>
+        </header>
+        <ul class="nav">
+            <li class="nav-item">
+                <a href="how-we-win.html">How we win</a>
+            </li>
+            <li class="nav-item">
+                <a href="volunteer.html">Volunteer</a>
+            </li>
+            <li class="nav-item">
+                <a href="donate.html">Donate</a>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        A project of the Franklin County Grassroots Democrats
+    </footer>
+</body>
+
+</html>
