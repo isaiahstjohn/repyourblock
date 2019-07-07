@@ -212,6 +212,9 @@ columbus-panorama: 	Columbus, Ohio. Photo shot by Derek Jensen (Tysto), 2006-01-
             margin-bottom: 1rem;
         }
 
+        .updates-form__list {
+            list-style-type: none;
+        }
 
         footer {
             background-color: #001c51;
@@ -402,8 +405,19 @@ columbus-panorama: 	Columbus, Ohio. Photo shot by Derek Jensen (Tysto), 2006-01-
         </section>
         <section class="center sign-up-form longform">
             <h2>Get Updates on the Movement</h2>
-            <form>
-                Insert form here
+            <p>Receive e-mails with updates on how/what we are doing</p>
+            <form class="updates-form" action="" method="POST">
+                <ul class="updates-form__list">
+                    <li class="updates-form__field">
+                        <input type="text" required name="first name" placeholder="First Name" /></li>
+                    <li class="updates-form__field">
+                        <input type="text" required name="last name" placeholder="Last Name" /></li>
+                    <li class="updates-form__field">
+                        <input type="text" required name="email" placeholder="Email" /></li>
+                    <li class="updates-form__field">
+                        <input type="text" required name="zip code" placeholder="Zip Code" /></li>
+                </ul>
+                <button class="button" type="submit">Stay up to date!</button>
             </form>
         </section>
     </div> <!-- #body -->
@@ -429,7 +443,7 @@ columbus-panorama: 	Columbus, Ohio. Photo shot by Derek Jensen (Tysto), 2006-01-
         </ul>
     </div>
     <footer>
-        A project of the Franklin County Grassroots Democrats
+        A project of the &copy;2019 Franklin County Grassroots Democrats
     </footer>
 </body>
 
