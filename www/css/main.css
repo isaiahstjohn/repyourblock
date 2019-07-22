@@ -1,7 +1,7 @@
 /* Colors:      */
 
 html {
-    background-color: #000;
+    background-color: #fff;
 }
 
 html,
@@ -22,6 +22,7 @@ ol,
 li,
 a {
     font-size: inherit;
+    color: #fff;
 }
 
 p,
@@ -38,7 +39,7 @@ h2 {
 }
 
 .section-content {
-    font-size: 0.8rem;
+    font-size: .8rem;
 }
 
 .width-limiter {
@@ -71,6 +72,20 @@ button {
     margin-left: auto;
     margin-right: auto;
 }
+
+header {
+    width: 100%;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0),
+            rgba(57, 32, 97, .4),
+            rgba(57, 32, 97, .4),
+            rgba(57, 32, 97, 0)),
+        url('/img/mtg.jpg');
+    background-position: 63% 20%;
+    background-size: cover;
+    padding-bottom: 5rem;
+}
+
 
 #navbar-wrapper {
     position: absolute;
@@ -122,26 +137,27 @@ button {
     font-size: .8rem;
 }
 
-header {
-    width: 100%;
-    background:
-        linear-gradient(rgba(0, 0, 0, 0),
-            rgba(57, 32, 97, .4),
-            rgba(57, 32, 97, .4),
-            rgba(57, 32, 97, 0)),
-        url('/img/mtg.jpg');
-    background-position: 63% 20%;
-    background-size: cover;
-}
-#hero{
-    width: 100%;
-}
-
 #tagline {
     text-align: center;
-    padding: 9rem 0.5rem;
+    padding: 7rem 0.5rem 1rem 0.5rem;
     font-size: 1.5rem;
     text-transform: uppercase;
+}
+
+
+.elevator-pitch {
+    font-size: 1.15rem;
+    font-weight: 400;
+}
+
+#call-to-action-top {
+    text-align: center;
+}
+
+h2 {
+    background-color: #031330;
+    color: #fff;
+    padding: 0.2rem;
 }
 
 .section-content,
@@ -152,17 +168,6 @@ footer {
 .section-content>* {
     margin-top: 1rem;
     margin-bottom: 1rem;
-}
-
-.elevator-pitch {
-    font-size: 1.15rem;
-    font-weight: 400;
-}
-
-#call-to-action-top {
-    background: rgb(51,73,116);
-    background: linear-gradient(167deg, rgba(51,73,116,1) 0%, rgba(0,28,81,1) 100%);
-    text-align: center;
 }
 
 button {
@@ -190,9 +195,6 @@ strong {
     font-weight: 700;
 }
 
-.longform {
-    background: #666;
-}
 
 .cardbox {
     display: flex;
@@ -216,8 +218,25 @@ strong {
     text-align: center;
 }
 
+#vision-inner {
+    display: flex;
+    margin: 1rem;
+}
+section.vision .section-content {
+    display: inline-block;
+    /* background-color: #031330; */
+    padding: .5rem;
+}
+
+section.vision p,
+section.vision ul,
+section.vision li,
 section.vision {
+    color: #000;
+}
+section.vision h2 {
     background-color: #031330;
+    color: #fff;
 }
 
 .values {
@@ -228,6 +247,11 @@ section.vision {
         url('/img/columbus-panorama.jpg');
     background-position: center center;
     background-size: cover;
+}
+
+.values h2 {
+    background-color: initial;
+    padding: 0;
 }
 
 .value-icon {
