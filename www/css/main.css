@@ -76,11 +76,11 @@ button {
 header {
     width: 100%;
     background:
-        linear-gradient(rgba(0, 0, 0, 0),
-            rgba(57, 32, 97, .4),
-            rgba(57, 32, 97, .4),
-            rgba(57, 32, 97, 0)),
-        url('/img/mtg.jpg');
+        linear-gradient(rgba(0, 28, 81, .1),
+        rgba(0, 28, 81, .3),
+        rgba(0, 28, 81, .4),
+        rgba(0, 28, 81, .2)),
+        url('/img/columbus-panorama.jpg');
     background-position: 63% 20%;
     background-size: cover;
     padding-bottom: 5rem;
@@ -93,8 +93,10 @@ header {
     flex-flow: row nowrap;
     justify-content: center;    
     width: 100%;
-    background-color: #aa6373;
-    opacity: .95;
+    background-color: rgba(255, 255, 255, 1);
+}
+#navbar-wrapper * {
+    color: #001c51;
 }
 
 #navbar {
@@ -113,7 +115,7 @@ header {
     font-weight: 700;
     font-size: .8rem;
     transform: rotate(-1.5deg);
-    color: #fff;
+    color: #001c51;
 }
 #navbar-links-wrapper {
     display: flex;
@@ -131,10 +133,23 @@ header {
 }
 
 #navbar-links a {
-    color: #fff;
+    color: #001c51;
     font-weight: 600;
     text-decoration: none;
     font-size: .8rem;
+}
+
+a#donate{
+    background: #b41929;
+    color: #fff;
+    padding: 2px 5px;
+}
+
+a#donate:hover {
+    background: #fff;
+    color: #001c51;
+    border: 1px solid #001c51;
+    padding: 1px 4px;
 }
 
 #tagline {
@@ -155,7 +170,7 @@ header {
 }
 
 h2 {
-    background-color: #031330;
+    background-color: #001c51;
     color: #fff;
     padding: 0.2rem;
 }
@@ -175,20 +190,21 @@ button {
     font-size: 1.2rem;
     margin-top: .6rem;
     margin-bottom: .6rem;
-    padding: .6rem;
+    padding: 10px;
     text-transform: uppercase;
-    background: rgb(155,88,154);
-    background: radial-gradient(ellipse, rgba(155,88,154,1) 0%, rgba(126,24,125,1) 100%);
+    background: #b41929;
     cursor: pointer;
     border: none;
     color: #fff;
     font-weight: 700;
-    border-radius: .2rem;
+    border-radius: .0rem;
 }
 
 button:hover {
-    background: rgb(155,88,154);
-    background: radial-gradient(ellipse, rgba(155,88,154,1) 0%, rgba(115,22,114,1) 100%);
+    border: 4px solid #001c51;
+    padding: 6px;
+    background-color: #fff;
+    color: #001c51;
 }
 
 strong {
@@ -224,7 +240,6 @@ strong {
 }
 section.vision .section-content {
     display: inline-block;
-    /* background-color: #031330; */
     padding: .5rem;
 }
 
@@ -235,23 +250,18 @@ section.vision {
     color: #000;
 }
 section.vision h2 {
-    background-color: #031330;
+    background-color: #001c51;
     color: #fff;
 }
 
 .values {
     background-color: #aa6367;
     background:
-        linear-gradient(rgba(57, 32, 97, .9),
-            rgba(57, 32, 97, .9)),
-        url('/img/columbus-panorama.jpg');
+        linear-gradient(rgba(0, 28, 21, .7),
+        rgba(0, 28, 81, .7)),
+        url('/img/mtg.jpg');
     background-position: center center;
     background-size: cover;
-}
-
-.values h2 {
-    background-color: initial;
-    padding: 0;
 }
 
 .value-icon {
@@ -329,14 +339,3 @@ footer {
         width: 1800px;
     }
 }
-/*
-!!!!!!!!!!!!!!!!!
-
-
-
-TODO: Fix header on screens larger than 600px wide to be a single row
-
-
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-*/
