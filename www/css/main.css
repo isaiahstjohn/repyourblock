@@ -80,7 +80,7 @@ header {
         rgba(0, 28, 81, .3),
         rgba(0, 28, 81, .4),
         rgba(0, 28, 81, .2)),
-        url('/img/columbus-panorama.jpg');
+        url('../img/columbus-panorama.jpg');
     background-position: 63% 20%;
     background-size: cover;
     padding-bottom: 5rem;
@@ -259,7 +259,7 @@ section.vision h2 {
     background:
         linear-gradient(rgba(0, 28, 21, .7),
         rgba(0, 28, 81, .7)),
-        url('/img/mtg.jpg');
+        url('../img/mtg.jpg');
     background-position: center center;
     background-size: cover;
 }
