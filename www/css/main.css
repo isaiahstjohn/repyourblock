@@ -5,9 +5,9 @@
     --nav-links-color: #fff;
     --main-light-text-color: #fff;
     --main-dark-text-color: #000;
-    --primary-color: #001c51;
-    --secondary-color: #b41929;
-    --accent-color: #b41929;
+    --primary-color: #530f5c;
+    --secondary-color: #fc5130;
+    --accent-color: #41D3BD;
     --logo-color: #fff;
 }
 
@@ -70,7 +70,6 @@ h2 {
     color: var(--main-light-text-color);
     padding: 0.2rem 1rem;
     display: inline-block;
-    border-bottom: 10px solid var(acccent-color);
     font-size: 1.5rem;
 }
 
@@ -152,6 +151,7 @@ a#donate{
     background: var(--secondary-color);
     color: #fff;
     padding: 2px 5px;
+    border-radius: .2rem;
 }
 
 a#donate:hover {
@@ -202,7 +202,7 @@ button {
     border: none;
     color: var(--main-light-text-color);
     font-weight: 700;
-    border-radius: .2rem;
+    border-radius: .5rem;
 }
 
 button:hover {
