@@ -14,6 +14,7 @@
 
 html {
     background-color: var(--main-bg-color);
+    color: var(--main-light-text-color)
 }
 
 html,
@@ -21,15 +22,6 @@ html,
     font-family: 'Oswald', sans-serif;
     font-size: 24px;
     font-weight: 300;
-}
-
-p,
-ul,
-ol,
-li,
-a {
-    font-size: inherit;
-    color: var(--main-light-text-color);
 }
 
 p,
@@ -73,6 +65,10 @@ h2 {
     font-size: 1.5rem;
 }
 
+h3 {
+
+}
+
 .section-content,
 .width-limiter,
 .cardbox,
@@ -97,6 +93,26 @@ header {
     padding-bottom: 5rem;
 }
 
+.table-pair {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.vision-table {
+    width: 14rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+#fcdp-today {
+    background-color: #ddd;
+    color: #555;
+}
+
+#fcdp-tomorrow {
+    border: 4px solid var(--accent-color);
+}
 
 #navbar-wrapper {
     position: absolute;
@@ -183,6 +199,7 @@ a#donate:hover {
 .section-content,
 footer {
     padding: 2rem 0.5rem;
+    width: 100%;
 }
 
 .section-content>* {
@@ -243,13 +260,9 @@ strong {
     display: flex;
 }
 
-section.vision p,
-section.vision ul,
-section.vision li,
-section.vision {
+.vision {
     color: #000;
 }
-
 
 .values {
     background-color: #aa6367;
