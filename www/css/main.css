@@ -28,14 +28,10 @@ a {
 p,
 ul,
 ol,
-#tagline {
-    width: 37em;
+#tagline,
+.section-content {
+    width: 37em; /*TODO: change to rems */
     max-width: 100%; /* ensures section will shrink if necessary */
-}
-
-h2 {
-    width: 24.66em;
-    max-width: 100%;
 }
 
 .section-content {
@@ -60,6 +56,14 @@ h6 {
 h1,
 h2 {
     text-transform: uppercase;
+}
+
+h2 {
+    background-color: #001c51;
+    color: #fff;
+    padding: 0.2rem 1rem;
+    display: inline-block;
+    border-bottom: 10px solid #b41929;
 }
 
 .section-content,
@@ -169,12 +173,6 @@ a#donate:hover {
     text-align: center;
 }
 
-h2 {
-    background-color: #001c51;
-    color: #fff;
-    padding: 0.2rem;
-}
-
 .section-content,
 footer {
     padding: 2rem 0.5rem;
@@ -197,7 +195,7 @@ button {
     border: none;
     color: #fff;
     font-weight: 700;
-    border-radius: .0rem;
+    border-radius: .2rem;
 }
 
 button:hover {
@@ -236,11 +234,6 @@ strong {
 
 #vision-inner {
     display: flex;
-    margin: 1rem;
-}
-section.vision .section-content {
-    display: inline-block;
-    padding: .5rem;
 }
 
 section.vision p,
@@ -249,10 +242,7 @@ section.vision li,
 section.vision {
     color: #000;
 }
-section.vision h2 {
-    background-color: #001c51;
-    color: #fff;
-}
+
 
 .values {
     background-color: #aa6367;
