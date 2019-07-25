@@ -1,19 +1,26 @@
 /* Colors:      */
 
+:root {
+    --main-bg-color: #fff;
+    --nav-links-color: #fff;
+    --main-light-text-color: #fff;
+    --main-dark-text-color: #000;
+    --primary-color: #001c51;
+    --secondary-color: #b41929;
+    --accent-color: #b41929;
+    --logo-color: #fff;
+}
+
+
 html {
-    background-color: #fff;
+    background-color: var(--main-bg-color);
 }
 
 html,
 #navbar-links > a {
     font-family: 'Oswald', sans-serif;
     font-size: 24px;
-    color: #fff;
     font-weight: 300;
-}
-
-h2 {
-    font-size: 1.5em;
 }
 
 p,
@@ -22,7 +29,7 @@ ol,
 li,
 a {
     font-size: inherit;
-    color: #fff;
+    color: var(--main-light-text-color);
 }
 
 p,
@@ -59,11 +66,12 @@ h2 {
 }
 
 h2 {
-    background-color: #001c51;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--main-light-text-color);
     padding: 0.2rem 1rem;
     display: inline-block;
-    border-bottom: 10px solid #b41929;
+    border-bottom: 10px solid var(acccent-color);
+    font-size: 1.5rem;
 }
 
 .section-content,
@@ -97,10 +105,7 @@ header {
     flex-flow: row nowrap;
     justify-content: center;    
     width: 100%;
-    background-color: rgba(255, 255, 255, 1);
-}
-#navbar-wrapper * {
-    color: #001c51;
+    background-color: var(--primary-color);
 }
 
 #navbar {
@@ -119,7 +124,7 @@ header {
     font-weight: 700;
     font-size: .8rem;
     transform: rotate(-1.5deg);
-    color: #001c51;
+    color: var(--logo-color);
 }
 #navbar-links-wrapper {
     display: flex;
@@ -137,22 +142,22 @@ header {
 }
 
 #navbar-links a {
-    color: #001c51;
+    color: var(--nav-links-color);
     font-weight: 600;
     text-decoration: none;
     font-size: .8rem;
 }
 
 a#donate{
-    background: #b41929;
+    background: var(--secondary-color);
     color: #fff;
     padding: 2px 5px;
 }
 
 a#donate:hover {
     background: #fff;
-    color: #001c51;
-    border: 1px solid #001c51;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
     padding: 1px 4px;
 }
 
@@ -161,12 +166,14 @@ a#donate:hover {
     padding: 7rem 0.5rem 1rem 0.5rem;
     font-size: 1.5rem;
     text-transform: uppercase;
+    color: var(--main-light-text-color);
 }
 
 
 .elevator-pitch {
     font-size: 1.15rem;
     font-weight: 400;
+    color: var(--main-light-text-color);
 }
 
 #call-to-action-top {
@@ -190,19 +197,19 @@ button {
     margin-bottom: .6rem;
     padding: 10px;
     text-transform: uppercase;
-    background: #b41929;
+    background: var(--secondary-color);
     cursor: pointer;
     border: none;
-    color: #fff;
+    color: var(--main-light-text-color);
     font-weight: 700;
     border-radius: .2rem;
 }
 
 button:hover {
-    border: 4px solid #001c51;
+    border: 4px solid var(--primary-color);
     padding: 6px;
     background-color: #fff;
-    color: #001c51;
+    color: var(--primary-color);
 }
 
 strong {
@@ -265,7 +272,7 @@ section.vision {
 }
 
 footer {
-    background-color: #001c51;
+    background-color: var(--primary-color);
     padding: 1rem 0rem;
     text-align: center;
     color: #999;
