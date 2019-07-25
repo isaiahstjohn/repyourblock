@@ -142,6 +142,7 @@ a#donate {
   background: #fc5130;
   color: #fff;
   padding: 2px 5px;
+  border-radius: 0.2rem;
 }
 
 a#donate:hover {
@@ -195,7 +196,7 @@ button {
   border: none;
   color: #fff;
   font-weight: 700;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 
 button:hover {
