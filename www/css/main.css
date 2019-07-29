@@ -4,17 +4,20 @@
     --main-bg-color: #fff;
     --nav-links-color: #fff;
     --main-light-text-color: #fff;
-    --main-dark-text-color: #000;
-    --primary-color: #001c51;
-    --secondary-color: #b41929;
-    --accent-color: #b41929;
+    --main-dark-text-color: #2a2a2a;
+    --primary-color: #3c0163;
+    --secondary-color: #ee3300;
+    --accent-color: #5BBA6F;
     --logo-color: #fff;
 }
 
 
 html {
     background-color: var(--main-bg-color);
+    color: var(--main-light-text-color)
 }
+
+
 
 html,
 #navbar-links > a {
@@ -26,19 +29,20 @@ html,
 p,
 ul,
 ol,
-li,
-a {
-    font-size: inherit;
-    color: var(--main-light-text-color);
-}
-
-p,
-ul,
-ol,
 #tagline,
 .section-content {
-    width: 37em; /*TODO: change to rems */
-    max-width: 100%; /* ensures section will shrink if necessary */
+    max-width: 30rem;
+    font-family: 'Montserrat', sans-serif;
+    text-overflow: wrap;
+
+}
+
+ul {
+    /* list-style-type: circle; */
+}
+
+li {
+    padding-bottom: .3rem;
 }
 
 .section-content {
@@ -56,6 +60,7 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: 'Oswald', sans-serif;
     margin: 0;
     font-weight: 700;
 }
@@ -70,23 +75,25 @@ h2 {
     color: var(--main-light-text-color);
     padding: 0.2rem 1rem;
     display: inline-block;
-    border-bottom: 10px solid var(acccent-color);
     font-size: 1.5rem;
+}
+
+h3 {
+
 }
 
 .section-content,
 .width-limiter,
 .cardbox,
-ul,
-p,
-h2,
-button {
+h1,
+.button {
     margin-left: auto;
     margin-right: auto;
 }
 
 header {
     width: 100%;
+    min-height: 85vh;
     background:
         linear-gradient(rgba(0, 28, 81, .1),
         rgba(0, 28, 81, .3),
@@ -95,9 +102,8 @@ header {
         url('../img/columbus-panorama.jpg');
     background-position: 63% 20%;
     background-size: cover;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
 }
-
 
 #navbar-wrapper {
     position: absolute;
@@ -121,7 +127,6 @@ header {
     display: block;
     font-family: 'Permanent Marker', sans-serif;
     text-decoration: none;
-    font-weight: 700;
     font-size: .8rem;
     transform: rotate(-1.5deg);
     color: var(--logo-color);
@@ -143,25 +148,51 @@ header {
 
 #navbar-links a {
     color: var(--nav-links-color);
-    font-weight: 600;
+    font-weight: 400;
     text-decoration: none;
     font-size: .8rem;
 }
 
-a#donate{
-    background: var(--secondary-color);
-    color: #fff;
-    padding: 2px 5px;
+#navbar-links a:hover{
+    animation-name: focus-zoom;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
 }
 
-a#donate:hover {
-    background: #fff;
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-    padding: 1px 4px;
+@keyframes focus-zoom {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.03);
+    }
+}
+
+@keyframes click-out {
+    0% {
+        transform: scale(1.03);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+a#donate{
+    background: var(--secondary-color);
+    color: var(--main-light-text-color);
+    padding: 2px 5px;
+    border-radius: .1rem;
+}
+
+a#donate:active {
+    animation-name: click-out;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
 }
 
 #tagline {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
     text-align: center;
     padding: 7rem 0.5rem 1rem 0.5rem;
     font-size: 1.5rem;
@@ -171,45 +202,62 @@ a#donate:hover {
 
 
 .elevator-pitch {
+    font-family: 'Oswald', sans-serif;
     font-size: 1.15rem;
     font-weight: 400;
     color: var(--main-light-text-color);
+}
+
+#not-sure {
+    font-family: 'Oswald', sans-serif;
+    color: var(--main-light-text-color);
+    text-decoration: underline;
 }
 
 #call-to-action-top {
     text-align: center;
 }
 
+#top-action {
+    margin-top: 2rem;
+}
+
 .section-content,
 footer {
-    padding: 2rem 0.5rem;
+    padding: 1rem 0.5rem;
+    width: 100%;
 }
 
-.section-content>* {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-button {
-    display: block;
-    font-size: 1.2rem;
+[type = "submit"],
+a.button {
+    display: inline-block;
+    font-size: 1.2rem !important;
     margin-top: .6rem;
     margin-bottom: .6rem;
-    padding: 10px;
+    padding: 10px !important;
     text-transform: uppercase;
-    background: var(--secondary-color);
+    background: var(--secondary-color) !important;
     cursor: pointer;
     border: none;
-    color: var(--main-light-text-color);
-    font-weight: 700;
-    border-radius: .2rem;
+    color: var(--main-light-text-color) !important;
+    font-family: 'Oswald', sans-serif !important;
+    font-weight: 700 !important;
+    border-radius: .2rem !important;
+    text-decoration: none;
 }
 
-button:hover {
-    border: 4px solid var(--primary-color);
-    padding: 6px;
-    background-color: #fff;
-    color: var(--primary-color);
+[type = "submit"]:hover,
+a.button:hover {
+    animation-name: focus-zoom;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+}
+
+[type = "submit"]:active,
+a.button:active {
+    animation-name: click-out;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
 }
 
 strong {
@@ -232,7 +280,7 @@ strong {
     width: 10rem;
     text-align: left;
     margin: 1rem;
-    color: #fff;
+    color: var(--main-light-text-color);
 }
 
 .card > h3 {
@@ -243,13 +291,41 @@ strong {
     display: flex;
 }
 
-section.vision p,
-section.vision ul,
-section.vision li,
-section.vision {
-    color: #000;
+.vision {
+    color: var(--main-dark-text-color);
 }
 
+.table-pair {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.vision-table {
+    margin: .5rem;
+    padding: 1rem;
+    width: 12rem;
+    background: #fff;
+}
+
+.vision-table > h3 {
+    text-align: center;
+}
+
+.vt-today {
+    border: 4px solid #777;
+}
+
+.vt-tomorrow {
+    border: 4px solid var(--accent-color);
+}
 
 .values {
     background-color: #aa6367;
@@ -271,12 +347,35 @@ section.vision {
     list-style-type: none;
 }
 
+.sign-up-form {
+    color: var(--main-dark-text-color);
+}
+
+.content {
+    color: var(--main-dark-text-color);
+}
+.how-we-win-main {
+    padding-top: 4rem;
+}
+
+a.text-link {
+    text-decoration: underline;
+    color: var(--accent-color);
+    font-weight: bold; 
+    cursor: pointer;
+}
+
 footer {
     background-color: var(--primary-color);
     padding: 1rem 0rem;
     text-align: center;
     color: #999;
     font-size: .6rem;
+}
+
+
+#navbar-links a.current-page {
+    text-decoration: underline !important;
 }
 
 @media only screen and (min-width: 380px) {
@@ -290,7 +389,7 @@ footer {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        padding: 0.4rem 2rem 0.4rem 2rem;
+        padding: 1.2rem 2rem 0.6rem 2rem;
     }
 
     #navbar-links-wrapper {
@@ -324,15 +423,42 @@ footer {
     #navbar-brand {
         font-size: 1rem;
     }
-}
 
-@media only screen and (min-width: 1200px) {
-
-
+    .vision-table{
+        margin: 1rem;
+        width: 35vw;
+        max-width: 28rem;
+    }
+    
 }
 
 @media only screen and (min-width: 1900px) {
     .cardbox {
         width: 1800px;
     }
+}
+
+#can_embed_form_inner h2,
+#can_embed_form_inner h4,
+#action_info,
+#logo_wrap,
+.international_link-wrap,
+.country_drop_wrap,
+.checkbox_group_wrap,
+#d_sharing,
+#CellPhone,
+[for = "CellPHone"],
+#City,
+[for = "City"],
+#Address,
+[for = "Address"],
+#form-first_name,
+[for = "form-first_name"],
+#form-last_name,
+[for = "form-last_name"]{
+    display: none !important;
+}
+
+#can_thank_you {
+    background-color: var(--accent-color) !important;
 }

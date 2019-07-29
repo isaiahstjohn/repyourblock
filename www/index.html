@@ -25,16 +25,15 @@ columbus-panorama: 	Columbus, Ohio. Photo shot by Derek Jensen (Tysto), 2006-01-
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description"
         content="For too long, a wealthy and powerful few have made decisions for our communities. We're electing scores of impassioned neighborhood ambassadors to the Central Committee. ">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700|Permanent+Marker&display=swap"
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700|Permanent+Marker|Montserrat&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32">
     <link rel="stylesheet" type="text/css" href="./css/normalize.css">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
-    <script src="./js/live.js"></script>
 </head>
 
 <body>
+
     <header>
         <div id="navbar-wrapper">
             <div id="navbar">
@@ -42,7 +41,7 @@ columbus-panorama: 	Columbus, Ohio. Photo shot by Derek Jensen (Tysto), 2006-01-
                 <div id="navbar-links-wrapper">
                     <div id="navbar-links">
                         <a href="how-we-win.html">How we win</a>
-                        <a href="volunteer.html">Volunteer</a>
+                        <a href="https://actionnetwork.org/forms/volunteer-w-repyourblock2020">Volunteer</a>
                         <a id="donate" href="donate.html">Donate</a>
                     </div>
                 </div>
@@ -63,30 +62,77 @@ columbus-panorama: 	Columbus, Ohio. Photo shot by Derek Jensen (Tysto), 2006-01-
                 <div class="elevator-pitch">
                     Will you join us?
                 </div>
-                <div id="#top-action">
-                    <button>Yes, I'm in</button>
-                    <a href="#">I'm not sure yet</a>
+                <div id="top-action">
+                    <a href="https://actionnetwork.org/forms/join-repyourblock2020" class="button">Yes, I'm in</a><br>
+                    <a href="#" id="not-sure" hidden>I'm not sure yet</a>
                 </div>
             </div>
         </section>
     </header>
     <main>
         <section class="vision">
-                <div class="section-content">
-                    <h2>Our Vision</h2>
-                    <p>When we build a new majority within the Franklin County Democratic Party,
-                        we will:
-                    </p>
-                    <ul>
-                        <li>democratize and re-energize the county party</li>
-                        <li>cultivate leaders at <strong>all</strong> levels</li>
-                        <li>redefine what it means to be a Central Committee member</li>
-                    </ul>
-                    <p>Here's our vision for the future of the party:</p>
-                    <p>Insert table here</p>
-                    <p>Here's our vision for the role of Central Committee members:</p>
-                    <p>Insert table here</p>
+            <div class="section-content">
+                <h2>Our Vision</h2>
+                <p>When we build a new majority within the Franklin County Democratic Party,
+                    we will:
+                </p>
+                <ul>
+                    <li>democratize and re-energize the county party</li>
+                    <li>cultivate leaders at <strong>all</strong> levels</li>
+                    <li>redefine what it means to be a Central Committee member</li>
+                </ul>
+                <p>Here's our vision for the future of the party:</p>
+                <div class="table-pair">
+                    <div id="fcdp-today" class="vision-table vt-today">
+                        <h3>The Franklin County Democratic Party today</h3>
+                        <ul>
+                            <li>Exclusive good ol'boys club</li>
+                            <li>Closed and lacks transparency</li>
+                            <li>Accountable to the wealthy few</li>
+                            <li>Limiting true progress</li>
+                            <li>People are left out of decisions that impact their lives </li>
+                            <li>Little to no community engagement</li>
+                            <li>The “old guard” - “Get in line and wait your turn”</li>
+                        </ul>
+                    </div>
+                    <div id="fcdp-tomorrow" class="vision-table vt-tomorrow">
+                        <h3>A more democratic party</h3>
+                        <ul>
+                            <li>Inclusive and open</li>
+                            <li>Radically transparent</li>
+                            <li>Accountable to the people</li>
+                            <li>Progress and policy changes that improve our communities</li>
+                            <li>Listening and connected to every neighborhood</li>
+                            <li>Building leaders across the county</li>
+                            <li>Guided by values and a vision for change</li>
+                            <li>Everyone can be a leader and changemaker</li>
+                        </ul>
+                    </div>
                 </div>
+                <p>Here's our vision for the role of Central Committee members:</p>
+                <div class="table-pair">
+                    <div class="vision-table vt-today">
+                        <h3>The Central Committee member role today</h3>
+                        <ul>
+                            <li>"Get in line. Wait your turn"</li>
+                            <li>Rub elbows and schmooze with the candidates</li>
+                            <li>Get Democrats elected</li>
+                            <li>Toe the party line</li>
+                        </ul>
+                    </div>
+                    <div class="vision-table vt-tomorrow">
+                        <h3>Community advocates</h3>
+                        <ul>
+                            <li>Build community in their neighborhoods</li>
+                            <li>Listen to their neighbors. Learn more about people's fears and hopes for the future.
+                            </li>
+                            <li>Speak up about what they're hearing in their communities
+                            </li>
+                            <li>Develop guiding values and goals for the party</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="values">
             <div class="section-content">
@@ -145,27 +191,27 @@ columbus-panorama: 	Columbus, Ohio. Photo shot by Derek Jensen (Tysto), 2006-01-
         </section>
         <section class="sign-up-form">
             <div class="section-content">
-                <h2>Get Updates on the Movement</h2>
-                <p>Receive e-mails with updates on how/what we are doing</p>
-                <form class="updates-form" action="" method="POST">
-                    <ul class="updates-form__list">
-                        <li class="updates-form__field">
-                            <input type="text" required name="first name" placeholder="First Name" /></li>
-                        <li class="updates-form__field">
-                            <input type="text" required name="last name" placeholder="Last Name" /></li>
-                        <li class="updates-form__field">
-                            <input type="text" required name="email" placeholder="Email" /></li>
-                        <li class="updates-form__field">
-                            <input type="text" required name="zip code" placeholder="Zip Code" /></li>
-                    </ul>
-                    <button class="button" type="submit">Stay up to date!</button>
-                </form>
+                <h2>Get updates on the movement</h2>
+                <p>We need your help to change the Franklin County Democratic Party to truly fight
+                    for working families.
+                </p>
+                <p>Sign up now to get plugged in and receive updates as we build our movement to transform our county
+                    party.
+                </p>
+                <link href='https://actionnetwork.org/css/style-embed-whitelabel-v3.css' rel='stylesheet'
+                    type='text/css' />
+                <script
+                    src='https://actionnetwork.org/widgets/v3/form/join-repyourblock2020?format=js&source=widget'></script>
+                <div id='can-form-area-join-repyourblock2020' style='width: 100%'>
+                    <!-- this div is the target for our HTML insertion -->
+                </div>
             </div>
         </section>
     </main>
     <footer>
-        A project of the &copy;2019 Franklin County Grassroots Democrats
+        A project of the Franklin County Grassroots Democrats
     </footer>
+
 </body>
 
 </html>
