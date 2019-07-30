@@ -99,8 +99,8 @@ header {
         rgba(0, 28, 81, .3),
         rgba(0, 28, 81, .4),
         rgba(0, 28, 81, .2)),
-        url('../img/columbus-panorama.jpg');
-    background-position: 63% 20%;
+        url('../img/canvass.JPG');
+    background-position: 54% 10%;
     background-size: cover;
     padding-bottom: 3rem;
 }
@@ -299,7 +299,6 @@ strong {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: flex-start;
     width: 100vw;
     position: relative;
     left: 50%;
