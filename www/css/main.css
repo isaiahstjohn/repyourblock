@@ -360,7 +360,7 @@ strong {
 
 a.text-link {
     text-decoration: underline;
-    color: var(--accent-color);
+    color: var(--secondary-color);
     font-weight: bold; 
     cursor: pointer;
 }
