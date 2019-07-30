@@ -211,6 +211,17 @@ columbus-panorama: 	Columbus, Ohio. Photo shot by Derek Jensen (Tysto), 2006-01-
     <footer>
         A project of the Franklin County Grassroots Democrats
     </footer>
+    <script>
+        /* Change "Add Your Name" button to "Sign Up" */
+        window.addEventListener('load', function () {
+            let inputs = document.getElementsByTagName("input");
+            for (let i = 0; i < inputs.length; i++) {
+                if (inputs[i].getAttribute("type") === "submit" && inputs[i].getAttribute("value") === "Add Your Name") {
+                    inputs[i].setAttribute("value", "Sign Up");
+                }
+            }
+        });
+    </script>
 
 </body>
 
