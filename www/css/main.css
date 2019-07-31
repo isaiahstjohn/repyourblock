@@ -157,19 +157,9 @@ header {
 }
 
 #navbar-links a:hover{
-    animation-name: focus-zoom;
-    animation-duration: 0.1s;
-    animation-fill-mode: forwards;
+    transform: scale(1.03);
 }
 
-@keyframes focus-zoom {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(1.03);
-    }
-}
 
 @keyframes click-out {
     0% {
@@ -251,9 +241,7 @@ a.button {
 
 [type = "submit"]:hover,
 a.button:hover {
-    animation-name: focus-zoom;
-    animation-duration: 0.1s;
-    animation-fill-mode: forwards;
+    transform: scale(1.03);
 }
 
 [type = "submit"]:active,
