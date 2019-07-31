@@ -267,6 +267,16 @@ strong {
     font-weight: 700;
 }
 
+.cardbox-wrap {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
 
 .cardbox {
     display: flex;
@@ -485,7 +495,7 @@ footer {
     .vision-table{
         margin: 1rem;
         width: 35vw;
-        max-width: 28rem;
+        max-width: 20rem;
     }
 
     #tagline {
