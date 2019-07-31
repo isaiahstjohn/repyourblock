@@ -360,7 +360,7 @@ strong {
     color: var(--main-dark-text-color);
 }
 main {
-    padding-top: 4rem;
+    padding-top: 2.5rem;
 }
 
 a.text-link {
@@ -461,6 +461,10 @@ footer {
             background-size: cover;
     }
 
+    main {
+        padding-top: 2rem;
+    }
+
     .section-content,
     footer {
         padding: 2rem 2rem;
@@ -519,29 +523,16 @@ footer {
 .action-network-wrap {
     display: flex;
     justify-content: center;
+    min-height: 80vh;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
-#can_embed_form_inner h2,
-#can_embed_form_inner h4,
-#action_info,
-#logo_wrap,
-.international_link-wrap,
-.country_drop_wrap,
-.checkbox_group_wrap,
-#d_sharing,
-#CellPhone,
-[for = "CellPHone"],
-#City,
-[for = "City"],
-#Address,
-[for = "Address"],
-#form-first_name,
-[for = "form-first_name"],
-#form-last_name,
-[for = "form-last_name"]{
-    display: none !important;
-}
-
-#can_thank_you {
+#can_sidebar {
     background-color: var(--accent-color) !important;
+}
+
+.action-network {
+    width: 94vw !important;
+    max-width: 40rem !important;
 }
