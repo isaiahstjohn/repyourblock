@@ -359,7 +359,7 @@ strong {
 .content {
     color: var(--main-dark-text-color);
 }
-.how-we-win-main {
+main {
     padding-top: 4rem;
 }
 
@@ -514,6 +514,11 @@ footer {
     .cardbox {
         width: 1800px;
     }
+}
+
+.action-network-wrap {
+    display: flex;
+    justify-content: center;
 }
 
 #can_embed_form_inner h2,
