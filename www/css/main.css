@@ -14,7 +14,8 @@
 
 html {
     background-color: var(--main-bg-color);
-    color: var(--main-light-text-color)
+    color: var(--main-light-text-color);
+    overflow-x: hidden;
 }
 
 
@@ -79,7 +80,8 @@ h2 {
 }
 
 h3 {
-
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
 }
 
 .section-content,
@@ -95,12 +97,13 @@ header {
     width: 100%;
     min-height: 85vh;
     background:
-        linear-gradient(rgba(0, 28, 81, .1),
-        rgba(0, 28, 81, .3),
-        rgba(0, 28, 81, .4),
-        rgba(0, 28, 81, .2)),
-        url('../img/canvass.JPG');
-    background-position: 54% 10%;
+    radial-gradient(
+        rgba(0, 0, 0, .3),
+        rgba(0, 0, 0, .3),
+        rgba(0, 0, 0, .2),
+        rgba(0, 0, 0, .1)),
+    url('../img/canvass-small.jpg');
+    background-position: 50% 25%;
     background-size: cover;
     padding-bottom: 3rem;
 }
@@ -264,6 +267,16 @@ strong {
     font-weight: 700;
 }
 
+.cardbox-wrap {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
 
 .cardbox {
     display: flex;
@@ -329,10 +342,15 @@ strong {
 .values {
     background-color: #aa6367;
     background:
-        linear-gradient(rgba(0, 28, 21, .7),
-        rgba(0, 28, 81, .7)),
-        url('../img/mtg.jpg');
-    background-position: center center;
+        linear-gradient(
+            rgba(0, 0, 0, .8),
+            rgba(0, 0, 0, .6),
+            rgba(0, 0, 0, .3),
+            rgba(0, 0, 0, .6),
+            rgba(0, 0, 0, .7),
+            rgba(0, 0, 0, .9)),
+        url('../img/mtg-large.jpg');
+    background-position: 11% 30%;
     background-size: cover;
 }
 
@@ -394,9 +412,31 @@ footer {
     text-decoration: underline !important;
 }
 
+@media only screen and (min-width: 360px) {
+    #tagline {
+        max-width: 85vw;
+    }
+}
+
 @media only screen and (min-width: 380px) {
     #navbar-links > a {
         font-size: 1rem;
+    }
+
+    #tagline {
+        max-width: 80vw;
+    }
+}
+
+@media only screen and (min-width: 430px) {
+    #tagline {
+        max-width: 70vw;
+    }
+}
+
+@media only screen and (min-width: 530px) {
+    #tagline {
+        max-width: 60vw;
     }
 }
 
@@ -421,6 +461,18 @@ footer {
         font-size: 0.8rem;
     }
 
+    header{
+        background:
+            radial-gradient(
+                rgba(0, 0, 0, .3),
+                rgba(0, 0, 0, .3),
+                rgba(0, 0, 0, .2),
+                rgba(0, 0, 0, .1)),
+            url('../img/canvass-large.jpg');
+            background-position: 60% 20%;
+            background-size: cover;
+    }
+
     .section-content,
     footer {
         padding: 2rem 2rem;
@@ -443,9 +495,31 @@ footer {
     .vision-table{
         margin: 1rem;
         width: 35vw;
-        max-width: 28rem;
+        max-width: 20rem;
+    }
+
+    #tagline {
+        max-width: 50vw;
     }
     
+}
+
+@media only screen and (min-width: 900px) {
+    #tagline {
+        max-width: 40vw;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #tagline {
+        max-width: 30vw;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #tagline {
+        max-width: 25vw;
+    }
 }
 
 @media only screen and (min-width: 1900px) {
