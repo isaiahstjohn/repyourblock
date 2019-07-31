@@ -398,6 +398,12 @@ footer {
     font-size: .6rem;
 }
 
+.disclaimer {
+    width: 100%;
+    color: #fff;
+    font-size: 12px;
+}
+
 footer p {
     text-align: center;
 }
