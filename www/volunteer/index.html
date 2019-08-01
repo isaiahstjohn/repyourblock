@@ -58,6 +58,34 @@
     <footer>
         <p class="disclaimer">A project of the Franklin County Grassroots Democrats</p>
     </footer>
+    <script>
+        /* Change "Add Your Name" button to "Sign Up" */
+        (function () {
+            let attempts = 0;
+            let stop = false;
+            let pause = 100; // 0.1 secs
+            function attemptChange() {
+                if (attempts++ > 400) { // almost 7 minutes elapsed
+                    stop = true;
+                    return;
+                } else if (attempts > 100) { // 10 seconds elapsed
+                    pause = 1000; // 1 second
+                }
+                let inputs = document.getElementsByTagName("input");
+                for (let i = 0; i < inputs.length; i++) {
+                    if (inputs[i].getAttribute("type") === "submit" && inputs[i].getAttribute("value") === "Add Your Name") {
+                        inputs[i].setAttribute("value", "Sign Up");
+                        stop = true;
+                        return;
+                    }
+                }
+                if (!stop) {
+                    setTimeout(attemptChange, 100);
+                }
+            }
+            window.addEventListener('load', attemptChange);
+        })();
+    </script>
 </body>
 
 </html>
