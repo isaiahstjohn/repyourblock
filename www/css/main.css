@@ -237,6 +237,8 @@ a.button {
     font-weight: 700 !important;
     border-radius: .2rem !important;
     text-decoration: none;
+    transition-property: all !important;
+    transition-duration: 0s !important;
 }
 
 [type = "submit"]:hover,
