@@ -241,12 +241,12 @@ a.button {
     transition-duration: 0s !important;
 }
 
-[type = "submit"]:hover,
+#can-form-area-join-repyourblock2020 [type = "submit"]:hover,
 a.button:hover {
     transform: scale(1.03);
 }
 
-[type = "submit"]:active,
+#can-form-area-join-repyourblock2020 [type = "submit"]:active,
 a.button:active {
     animation-name: click-out;
     animation-duration: 0.1s;
