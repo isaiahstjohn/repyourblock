@@ -337,7 +337,7 @@ strong {
     background-color: #ddd;
     height: 16vw;
     border-bottom: 0.3vw solid #ccc;
-    color: var(--main-dark-text-color);
+    color: #000;
 }
 
 #fcdp-tomorrow li,
@@ -478,6 +478,9 @@ footer p {
 @media only screen and (min-width: 430px) {
     #tagline {
         max-width: 70vw;
+    }
+    .vision-table li {
+        color: var(--main-dark-text-color);
     }
 }
 
