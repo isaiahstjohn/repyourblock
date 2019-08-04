@@ -311,63 +311,46 @@ strong {
     margin-left: -50vw;
     margin-right: -50vw;
 }
-.vision-table h3 {
-    font-size: 3vw;
-    text-align: center;
-    display: block;
-    padding: 2vw;
+.table-pair li.table-header div{
+    font-size: calc(11px + 1vw);
+    text-transform: uppercase;
 }
-.vision-table {
-    width: 45vw;
-    font-size: 3vw;
-    background: #fff;
-    max-width: 14rem;
-    padding: 0;
-    margin: 1rem 0;
-}
-
-.vision-table li {
-    list-style-type: none;
-    padding: 1.5vw;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-content: center;
-    background-color: #ddd;
-    height: 16vw;
-    border-bottom: 0.3vw solid #ccc;
-    color: #000;
-}
-
-#fcdp-tomorrow li,
-#fcdp-today li {
-    height: 12vw;
-}
-
-.vision-table ul {
-    background-color: #ddd;
-    padding: 0;
-    margin: 0;
-}
-.vt-tomorrow {
-    margin-left: 2px;
-}
-.vt-today h3{
+.table-pair li.table-header div.col1{
     background-color: var(--slate-blue);
     color: #fff;
 }
-
-.vt-today li{
-    background-color: #ebeef0;
-}
-
-.vt-tomorrow h3{
+.table-pair li.table-header div.col2{
     background-color: var(--pink);
     color: #fff;
-    
 }
-.vt-tomorrow li{
+.table-pair ul{
+    margin: 0;
+    padding: 0;
+}
+.table-pair li {
+    list-style-type: none;
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    padding-left: 2px;
+    border-bottom: 0.2vw solid #ccc;
+}
+.table-pair li div {
+    width: 48vw;
+    max-width: 14rem;
+    color: #000;
+    margin: 0;
+    padding: 0.5em;
+    font-size: calc(9px + 1vw);
+}
+.table-pair div.col1{
+   background-color: #ebeef0;
+   margin-left: -2px;
+}
+.table-pair div.col2{
     background-color: #fae8ee;
+    margin-left: 2px;
 }
 
 .values {
@@ -478,14 +461,24 @@ footer p {
     #tagline {
         max-width: 70vw;
     }
-    .vision-table li {
+    /* .vision-table li {
         color: var(--main-dark-text-color);
-    }
+    } */
 }
 
 @media only screen and (min-width: 530px) {
     #tagline {
         max-width: 60vw;
+    }
+    .table-pair li {
+        border-bottom: 2px solid #ccc;
+    }
+    .table-pair li.table-header div {
+        font-size: 0.9rem;
+    }
+    .table-pair li div {
+        color: var(--main-dark-text-color);
+        font-size: 0.8rem;
     }
 }
 
@@ -524,30 +517,6 @@ footer p {
 
     main {
         padding-top: 2rem;
-    }
-
-    .vision-table {
-        font-size: 0.8rem;
-    }
-
-    .vision-table li{
-        border-bottom: 2px solid #ccc;
-    }
-
-    .vision-table h3{
-        font-size: 0.95rem;
-        height: 2.3rem;
-        padding: 0.7rem;
-    }
-
-    #fcdp-tomorrow li,
-    #fcdp-today li {
-        height: 3rem;
-    }
-
-    #role-today li,
-    #role-tomorrow li {
-        height: 4rem;
     }
 
     .section-content,
