@@ -246,17 +246,15 @@
     </footer>
     <script>
         /* Change "Add Your Name" button to "Sign Up" */
-        (function () {
-            const intervalId = setInterval(function () {
-                let inputs = document.getElementsByTagName("input");
-                for (let i = 0; i < inputs.length; i++) {
-                    if (inputs[i].getAttribute("type") === "submit" && inputs[i].getAttribute("value") === "Add Your Name") {
-                        inputs[i].setAttribute("value", "Sign Up");
-                        clearInterval(intervalId);
-                    }
+        document.addEventListener("can_embed_loaded", function () {
+            let inputs = document.getElementsByTagName("input");
+            for (let i = 0; i < inputs.length; i++) {
+                if (inputs[i].getAttribute("type") === "submit" && inputs[i].getAttribute("value") === "Add Your Name") {
+                    inputs[i].setAttribute("value", "Sign Up");
+                    return;
                 }
-            }, 100); // 0.1 seconds
-        })();
+            }
+        });
     </script>
 </body>
 
