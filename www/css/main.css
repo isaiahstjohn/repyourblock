@@ -579,7 +579,6 @@ footer p {
     justify-content: center;
     min-height: 80vh;
     padding-top: 2rem;
-    padding-bottom: 2rem;
 }
 
 #can_sidebar {
@@ -589,4 +588,8 @@ footer p {
 .action-network {
     width: 94vw !important;
     max-width: 40rem !important;
+}
+
+.can_embed #logo_wrap {
+	display: none !important;
 }
