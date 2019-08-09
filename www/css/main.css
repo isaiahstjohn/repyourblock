@@ -9,8 +9,6 @@
     --secondary-color: #ee3300;
     --accent-color: #5BBA6F;
     --logo-color: #fff;
-    --pink: #ca054d;
-    --slate-blue: #284b63;
 }
 
 
@@ -239,16 +237,14 @@ a.button {
     font-weight: 700 !important;
     border-radius: .2rem !important;
     text-decoration: none;
-    transition-property: all !important;
-    transition-duration: 0s !important;
 }
 
-#can-form-area-join-repyourblock2020 [type = "submit"]:hover,
+[type = "submit"]:hover,
 a.button:hover {
     transform: scale(1.03);
 }
 
-#can-form-area-join-repyourblock2020 [type = "submit"]:active,
+[type = "submit"]:active,
 a.button:active {
     animation-name: click-out;
     animation-duration: 0.1s;
@@ -311,46 +307,24 @@ strong {
     margin-left: -50vw;
     margin-right: -50vw;
 }
-.table-pair li.table-header div{
-    font-size: calc(11px + 1vw);
-    text-transform: uppercase;
+
+.vision-table {
+    margin: .5rem;
+    padding: 1rem;
+    width: 12rem;
+    background: #fff;
 }
-.table-pair li.table-header div.col1{
-    background-color: var(--slate-blue);
-    color: #fff;
+
+.vision-table > h3 {
+    text-align: center;
 }
-.table-pair li.table-header div.col2{
-    background-color: var(--pink);
-    color: #fff;
+
+.vt-today {
+    border: 4px solid #777;
 }
-.table-pair ul{
-    margin: 0;
-    padding: 0;
-}
-.table-pair li {
-    list-style-type: none;
-    padding: 2vw;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    padding-left: 2px;
-    border-bottom: 0.2vw solid #ccc;
-}
-.table-pair li div {
-    width: 48vw;
-    max-width: 14rem;
-    color: #000;
-    margin: 0;
-    padding: 0.5em;
-    font-size: calc(9px + 1vw);
-}
-.table-pair div.col1{
-   background-color: #ebeef0;
-   margin-left: -2px;
-}
-.table-pair div.col2{
-    background-color: #fae8ee;
-    margin-left: 2px;
+
+.vt-tomorrow {
+    border: 4px solid var(--accent-color);
 }
 
 .values {
@@ -461,24 +435,11 @@ footer p {
     #tagline {
         max-width: 70vw;
     }
-    /* .vision-table li {
-        color: var(--main-dark-text-color);
-    } */
 }
 
 @media only screen and (min-width: 530px) {
     #tagline {
         max-width: 60vw;
-    }
-    .table-pair li {
-        border-bottom: 2px solid #ccc;
-    }
-    .table-pair li.table-header div {
-        font-size: 0.9rem;
-    }
-    .table-pair li div {
-        color: var(--main-dark-text-color);
-        font-size: 0.8rem;
     }
 }
 
@@ -538,11 +499,11 @@ footer p {
         font-size: 1rem;
     }
 
-    /* .vision-table{
+    .vision-table{
         margin: 1rem;
         width: 35vw;
         max-width: 20rem;
-    } */
+    }
 
     #tagline {
         max-width: 50vw;
@@ -579,6 +540,7 @@ footer p {
     justify-content: center;
     min-height: 80vh;
     padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 #can_sidebar {
@@ -590,6 +552,12 @@ footer p {
     max-width: 40rem !important;
 }
 
-.can_embed #logo_wrap {
-	display: none !important;
+.full-width {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }

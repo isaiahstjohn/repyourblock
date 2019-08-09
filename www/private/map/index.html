@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <title>
+        #RepYourBlock2020—How we win
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description"
+        content="For too long, a wealthy and powerful few have made decisions for our communities. We're electing scores of impassioned neighborhood ambassadors to the Central Committee. ">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700|Permanent+Marker|Montserrat&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://repyourblock2020.org/img/favicon-32x32.png" sizes="32x32">
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <!-- <link rel="stylesheet" type="text/css" href="/css/main.css"> -->
+    <style>
+        * {
+            color: #000;
+        }
+
+        #map {
+            height: 100vh;
+
+        }
+    </style>
+    <script src="data.js"></script>
+</head>
+
+<body>
+
+    <div id="map" class="full-width"></div>
+
+    <script>
+        /* 
+        AVAILABLE MARKER COLORS
+        yellow, blue, green, lightblue, orange, pink, purple, red
+        e.g.: http://maps.google.com/mapfiles/ms/icons/blue-dot.png
+        (https://sites.google.com/site/gmapsdevelopment/)
+        (https://gist.github.com/getsudocode/605bf60f5de40eb3f6b00addd93c913d)
+
+        MAP DATA: https://github.com/mggg/ohio-precincts
+
+        CANDIDATE STAGES: interested, pledged, petitioned
+        */
+        let map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 11,
+                center: { lat: 39.97, lng: -82.9932 }
+            });
+            mark_wards(data);
+        }
+
+        function get_icon_url(ward) {
+            if (ward.candidates[0].name.trim().length > 0) {
+                return "http://maps.google.com/mapfiles/ms/icons/purple-dot.png"
+            } else {
+                return "http://maps.google.com/mapfiles/ms/icons/green-dot.png"
+            }
+        }
+
+        function mark_wards(ward_list) {
+            ward_list.map(function (ward) {
+                let marker = new google.maps.Marker({
+                    position: ward.pos,
+                    // label: {
+                    //     text: ward.name.slice(0, 3),
+                    //     color: "#000000",
+                    //     fontWeight: "bold",
+                    //     fontSize: "12px"
+                    // },
+                    map: map,
+                    icon: {
+                        url: get_icon_url(ward)
+                    }
+                });
+                infowindow = new google.maps.InfoWindow();
+                marker.addListener('mouseover', function () {
+                    infowindow.open(map, marker);
+                    infowindow.setContent((function () {
+                        let content = `
+                        <h3>${ward.name}</h3>
+                        <strong>Current:</strong> ${ward.current}
+                        <h4>Candidates</h4>
+                        <ul>
+                            <li><h4>${ward.candidates[0].name}</h4>
+                                <ul>
+                                    <li><strong>Stage:</strong> ${ward.candidates[0].stage}</li>
+                                    <li><strong>Phone:</strong> ${ward.candidates[0].phone}</li>
+                                    <li><strong>Email:</strong> ${ward.candidates[0].email}</li>
+                                </ul>
+                            </li>
+                        </ul>`
+                        return content;
+                    })());
+                });
+            });
+        }
+
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsxq7t7IFBEzdRerEV7cudojLS8ojBt7o&callback=initMap"></script>
+</body>
+
+</html>

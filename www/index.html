@@ -3,7 +3,7 @@
 
 <head>
     <title>
-        RepYourBlock2020—Let's take back the Franklin Co. Democratic Party, one block at a time
+        #RepYourBlock2020—Let's take back the Franklin Co. Democratic Party, one block at a time
     </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -73,7 +73,7 @@
                     Will you join us?
                 </div>
                 <div id="top-action">
-                    <a href="https://actionnetwork.org/forms/join-repyourblock2020" target="_blank" class="button">
+                    <a href="https://actionnetwork.org/forms/join-repyourblock2020" class="button">
                         Yes, I'm in</a><br>
                     <a href="#" id="not-sure" hidden>I'm not sure yet</a>
                 </div>
@@ -92,72 +92,56 @@
                     <li>cultivate leaders at <strong>all</strong> levels</li>
                     <li>redefine what it means to be a Central Committee member</li>
                 </ul>
-                <p>Here's our vision for the future of the Franklin County Democratic Party:</p>
+                <p>Here's our vision for the future of the party:</p>
                 <div class="table-pair">
-                    <ul>
-                        <li class="table-header">
-                            <div class="col1">The Party today</div>
-                            <div class="col2">Our vision for the Party</div>
-                        </li>
-                        <li>
-                            <div class="col1">Exclusive good ol'boys club</div>
-                            <div class="col2">Inclusive and open</div>
-                        </li>
-                        <li>
-                            <div class="col1">Closed and lacks transparency</div>
-                            <div class="col2"> Radically transparent</div>
-                        </li>
-                        <li>
-                            <div class="col1"> Accountable to the wealthy few</div>
-                            <div class="col2"> Accountable to the people</div>
-                        </li>
-                        <li>
-                            <div class="col1"> Limiting true progress</div>
-                            <div class="col2"> Progress and policy changes that improve our communities</div>
-                        </li>
-                        <li>
-                            <div class="col1"> People are left out of decisions that impact their lives</div>
-                            <div class="col2"> Building leaders across the county</div>
-                        </li>
-                        <li>
-                            <div class="col1"> Little to no community engagement</div>
-                            <div class="col2"> Listening and connected to every neighborhood</div>
-                        </li>
-                        <li>
-                            <div class="col1"> The "old guard"—"Get in line and wait your turn"</div>
-                            <div class="col2"> Everyone can be a leader and changemaker</div>
-                        </li>
-                        <li>
-                            <div class="col1"> Happy with the way things are</div>
-                            <div class="col2"> Guided by values and a vision for change</div>
-                        </li>
-                    </ul>
+                    <div id="fcdp-today" class="vision-table vt-today">
+                        <h3>The Franklin County Democratic Party today</h3>
+                        <ul>
+                            <li>Exclusive good ol'boys club</li>
+                            <li>Closed and lacks transparency</li>
+                            <li>Accountable to the wealthy few</li>
+                            <li>Limiting true progress</li>
+                            <li>People are left out of decisions that impact their lives </li>
+                            <li>Little to no community engagement</li>
+                            <li>The “old guard” - “Get in line and wait your turn”</li>
+                        </ul>
+                    </div>
+                    <div id="fcdp-tomorrow" class="vision-table vt-tomorrow">
+                        <h3>A more democratic party</h3>
+                        <ul>
+                            <li>Inclusive and open</li>
+                            <li>Radically transparent</li>
+                            <li>Accountable to the people</li>
+                            <li>Progress and policy changes that improve our communities</li>
+                            <li>Listening and connected to every neighborhood</li>
+                            <li>Building leaders across the county</li>
+                            <li>Guided by values and a vision for change</li>
+                            <li>Everyone can be a leader and changemaker</li>
+                        </ul>
+                    </div>
                 </div>
                 <p>Here's our vision for the role of Central Committee members:</p>
                 <div class="table-pair">
-                    <ul>
-                        <li class="table-header">
-                            <div class="col1"> The role today</div>
-                            <div class="col2"> Our vision for the role</div>
-                        </li>
-                        <li>
-                            <div class="col1"> "Get in line. Wait your turn."</div>
-                            <div class="col2"> Build community in their neighborhoods</div>
-                        </li>
-                        <li>
-                            <div class="col1"> Rub elbows and schmooze with the candidates</div>
-                            <div class="col2"> Listen to their neighbors. Learn more about people's fears and hopes for
-                                the future.</div>
-                        </li>
-                        <li>
-                            <div class="col1"> Get Democrats elected</div>
-                            <div class="col2"> Speak up about what they're hearing in their communities</div>
-                        </li>
-                        <li>
-                            <div class="col1"> Toe the party line</div>
-                            <div class="col2"> Develop guiding values and goals for the party</div>
-                        </li>
-                    </ul>
+                    <div class="vision-table vt-today">
+                        <h3>The Central Committee member role today</h3>
+                        <ul>
+                            <li>"Get in line. Wait your turn"</li>
+                            <li>Rub elbows and schmooze with the candidates</li>
+                            <li>Get Democrats elected</li>
+                            <li>Toe the party line</li>
+                        </ul>
+                    </div>
+                    <div class="vision-table vt-tomorrow">
+                        <h3>Community advocates</h3>
+                        <ul>
+                            <li>Build community in their neighborhoods</li>
+                            <li>Listen to their neighbors. Learn more about people's fears and hopes for the future.
+                            </li>
+                            <li>Speak up about what they're hearing in their communities
+                            </li>
+                            <li>Develop guiding values and goals for the party</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -246,16 +230,33 @@
     </footer>
     <script>
         /* Change "Add Your Name" button to "Sign Up" */
-        document.addEventListener("can_embed_loaded", function () {
-            let inputs = document.getElementsByTagName("input");
-            for (let i = 0; i < inputs.length; i++) {
-                if (inputs[i].getAttribute("type") === "submit" && inputs[i].getAttribute("value") === "Add Your Name") {
-                    inputs[i].setAttribute("value", "Sign Up");
+        (function () {
+            let attempts = 0;
+            let stop = false;
+            let pause = 100; // 0.1 secs
+            function attemptChange() {
+                if (attempts++ > 400) { // almost 7 minutes elapsed
+                    stop = true;
                     return;
+                } else if (attempts > 100) { // 10 seconds elapsed
+                    pause = 1000; // 1 second
+                }
+                let inputs = document.getElementsByTagName("input");
+                for (let i = 0; i < inputs.length; i++) {
+                    if (inputs[i].getAttribute("type") === "submit" && inputs[i].getAttribute("value") === "Add Your Name") {
+                        inputs[i].setAttribute("value", "Sign Up");
+                        stop = true;
+                        return;
+                    }
+                }
+                if (!stop) {
+                    setTimeout(attemptChange, 100);
                 }
             }
-        });
+            window.addEventListener('load', attemptChange);
+        })();
     </script>
+
 </body>
 
 </html>
