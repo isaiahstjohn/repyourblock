@@ -1,6 +1,8 @@
 # Project Specific #
 ####################
 *-private.js
+token.pickle
+credentials.json
 
 
 # Compiled source #
