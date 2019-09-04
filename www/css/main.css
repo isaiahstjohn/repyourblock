@@ -437,6 +437,12 @@ footer {
 
 footer p {
     text-align: center;
+    margin-block-start: 0.2rem;
+}
+
+footer h2 {
+    text-transform: none;
+    font-size: 0.8rem;
 }
 
 
