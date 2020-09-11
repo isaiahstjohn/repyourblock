@@ -1,6 +1,7 @@
 # Project Specific #
 ####################
 *-private.js
+*-private.csv
 token.pickle
 credentials.json
 
